@@ -18,6 +18,7 @@ namespace Pay1193.Entity
         public string? MidleName { get; set; }
         [Required, MaxLength(50)]
         public string LastName { get; set; }
+
         //public string FullName { get; set; }
         public string Gender { get; set; }
         public string ImageUrl { get; set; }

@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Pay1193.Entity;
+using Pay1193.Persistence;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,6 +12,25 @@ namespace Pay1193.Services.Implement
     {
         private decimal taxRate;
         private decimal tax;
+        private readonly ApplicationDbContext _context;
+
+        public TaxService(ApplicationDbContext context)
+        {
+            _context = context;
+        }
+
+        public IEnumerable<TaxYears> GetAll()
+        {
+            return _context.TaxYears.ToList();
+
+        }
+
+
+        public TaxYears GetById(int id)
+        {
+            return _context.TaxYears.Where(u => u.Id == id).FirstOrDefault();
+        }
+
         public decimal TaxAmount(decimal totalAmount)
         {
             if(totalAmount < 1200)

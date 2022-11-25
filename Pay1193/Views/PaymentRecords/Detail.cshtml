@@ -1,4 +1,4 @@
-﻿@model EmployeeDetailsViewModel
+﻿@model PaymentRecordDetailsViewModel
 
 <div class="col-md-12 grid-margin grid-margin-md-0">
     <div class="card">
@@ -14,30 +14,82 @@
                     <li class="breadcrumb-item active" aria-current="page">Employee Detail</li>
                 </ol>
             </nav><br />
-            <div class="wrap d-flex justify-content-start justify-content-sm-center flex-wrap">
-                <img class="rounded-circle shadow-lg" style="width:300px; height:350px" src="@Url.Content(Model.ImageUrl)"/>
-                <div class="wrap align-items-center ml-5">
-                    <p class="font-weight-bold text-success" style="font-size20px">@Model.FullName</p>
-                    <p class="font-weight-bold text-success">Role: @Model.Designation</p>
-                    <p class="font-weight-bold text-success">Gender: @Model.Gender</p>
-                    <p class="font-weight-bold text-success">Date Of Birth: @Model.DoB.ToString("dd/MM/yyyy")</p>
-                    <p class="font-weight-bold text-success">Employee Number: @Model.EmployeeNo</p>
-                    <p class="font-weight-bold text-success">NI Number: @Model.NationalInsuranceNo</p>
-                    <p class="font-weight-bold text-success">Email: @Model.Email</p>
-                    <br /><br />
-                    <p class="font-weight-bold">Pay & Deduction</p>
-                    <hr style="background-color:crimson"/>
-                    <p class="font-weight-normal text-success">Payment Method: @Model.PaymentMethod</p>
-                    <p class="font-weight-normal text-success">Student Loan: @Model.StudentLoan</p>
-                    <p class="font-weight-normal text-success">Union Member: @Model.UnionMember</p>
-                    <br /><br />
-                    <p class="font-weight-bold">Address</p>
-                    <hr style="background-color:crimson" />
-                    <p class="font-weight-normal">@Model.Address</p>
-                    <p class="font-weight-normal">@Model.City</p>
-                    <p class="font-weight-normal">@Model.PostCode</p>
+
+            <div class="d-flex d-flex justify-content-between">
+                <div>
+                    <label>PayCompute Ltđ</label>
+                </div>
+                <div>
+                    <label>PayDate:</label> <span class="fw-bolder fs-5 text-white">@Model.PayDate.ToString("dd/MM/yyyy")</span>
+
                 </div>
             </div>
+            <div class="d-flex d-flex justify-content-between">
+                <div>
+                    <label>Employee's Name:</label> <span class="fw-bolder fs-5 text-white">@Model.FullName</span>
+                </div>
+                <div>
+                    <label>NiC:</label> <span class="fw-bolder fs-5 text-white">@Model.NIC.ToString("#")</span>
+
+                </div>
+                
+            </div>
+            <div class="wrap d-flex justify-content-start justify-content-sm-center flex-wrap">
+                <table class="table text-white">
+                    <thead>
+                        <tr>
+                            <th scope="col">Earnings</th>
+                            <th scope="col">Hours</th>
+                            <th scope="col">Rates</th>
+                            <th scope="col">Amount</th>
+                            <th scope="col">Deductions</th>
+                            <th scope="col">Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row" class="fw-bold fs-6">Basic:</th>
+                            <td>@Model.HourlyWorked</td>
+                            <td>@Model.HourlyRate</td>
+                            <td>@Model.ContractualHours</td>
+                            <td class="fw-bold fs-6">Tax:</td>
+                            <td>@Model.Tax</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="fw-bold fs-6">Overtime:</th>
+                            <td>@Model.OvertimeHours</td>
+                            <td>@Model.OvertimeRate</td>
+                            <td>@Model.OvertimeEarnings</td>
+                            <td class="fw-bold fs-6">NIC:</td>
+                            <td>@Model.OvertimeEarnings.ToString("$#,##0.00")</td>
+                        </tr>
+                        <tr>
+                            <th scope="row"></th>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="fw-bold fs-6">Union:</td>
+                            <td>@Model.UnionFee</td>
+                        </tr>
+                        <tr>
+                            <th scope="row"></th>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class ="fw-bold fs-6">SLC:</td>
+                            <td>@Model.SLC</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="fw-bold fs-6">Total:</th>
+                            <td>@Model.TotalDeduction</td>
+                            <td></td>
+                            <td>@Model.TotalEarnings.ToString("$#,##0.00")</td>
+                            <td></td>
+                            <td>@Model.TotalEarnings.ToString("$#,##0.00")</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="net-pay d-flex justify-content-end w-75 mt-5 ml-5 text-center fw-bold fs-5 text-white"><label class="mr-5">NET PAY:</label> <span class="text-success">@Model.NetPayment.ToString("$#,##0.00")</span> </div>
         </div>
     </div>
 </div>

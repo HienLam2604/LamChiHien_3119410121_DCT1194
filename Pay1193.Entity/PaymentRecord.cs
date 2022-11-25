@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Pay1193.Entity
 {
-    public class PaymentRecord
+    public class PaymentRecords
     {
         [Key]
         public int Id { get; set; }
@@ -16,15 +16,16 @@ namespace Pay1193.Entity
         public int EmployeeId { get; set; }
         public Employee Employee { get; set; }
 
-        public string fullName {get; set; }
+        public string FullName {get; set; }
 
         public string NiNo { get; set; }
 
         public DateTime PayDate { get; set; }
         public String PayMonth { get; set; }
-        [ForeignKey("TaxYear")]
+
+        [ForeignKey("TaxYears")]
         public int TaxYearId { get; set; }
-        public TaxYear TaxYear { get; set; }
+        public TaxYears TaxYear { get; set; }
 
         public string TaxCode { get; set; }
         [Column(TypeName ="decimal(18,2)")]
@@ -40,7 +41,7 @@ namespace Pay1193.Entity
         [Column(TypeName = "money")]
         public decimal OvertimeEarnings { get; set; }
         [Column(TypeName = "money")]
-        public decimal NiC { get; set; }
+        public decimal NIC { get; set; }
         [Column(TypeName = "money")]
         public decimal Tax { get; set; }
         [Column(TypeName = "money")]

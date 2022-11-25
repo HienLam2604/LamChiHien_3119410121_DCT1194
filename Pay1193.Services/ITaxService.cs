@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Pay1193.Entity;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,5 +10,8 @@ namespace Pay1193.Services
     public interface ITaxService
     {
         decimal TaxAmount(decimal totalAmount);
+        IEnumerable<TaxYears> GetAll();
+        TaxYears GetById(int id);
+
     }
 }

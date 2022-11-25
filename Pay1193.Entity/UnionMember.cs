@@ -2,7 +2,7 @@
 {
     public enum UnionMember
     {
-        No,
-        Yes
+        No = 0,
+        Yes = 1,
     }
 }

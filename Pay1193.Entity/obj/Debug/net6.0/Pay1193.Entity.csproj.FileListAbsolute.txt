@@ -34,3 +34,15 @@ D:\pay1193\Pay1193.Entity\obj\Debug\net6.0\Pay1193.Entity.dll
 D:\pay1193\Pay1193.Entity\obj\Debug\net6.0\refint\Pay1193.Entity.dll
 D:\pay1193\Pay1193.Entity\obj\Debug\net6.0\Pay1193.Entity.pdb
 D:\pay1193\Pay1193.Entity\obj\Debug\net6.0\ref\Pay1193.Entity.dll
+C:\Users\hiena\Desktop\NTier\Pay1193.Entity\bin\Debug\net6.0\Pay1193.Entity.deps.json
+C:\Users\hiena\Desktop\NTier\Pay1193.Entity\bin\Debug\net6.0\Pay1193.Entity.dll
+C:\Users\hiena\Desktop\NTier\Pay1193.Entity\bin\Debug\net6.0\Pay1193.Entity.pdb
+C:\Users\hiena\Desktop\NTier\Pay1193.Entity\obj\Debug\net6.0\Pay1193.Entity.csproj.AssemblyReference.cache
+C:\Users\hiena\Desktop\NTier\Pay1193.Entity\obj\Debug\net6.0\Pay1193.Entity.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hiena\Desktop\NTier\Pay1193.Entity\obj\Debug\net6.0\Pay1193.Entity.AssemblyInfoInputs.cache
+C:\Users\hiena\Desktop\NTier\Pay1193.Entity\obj\Debug\net6.0\Pay1193.Entity.AssemblyInfo.cs
+C:\Users\hiena\Desktop\NTier\Pay1193.Entity\obj\Debug\net6.0\Pay1193.Entity.csproj.CoreCompileInputs.cache
+C:\Users\hiena\Desktop\NTier\Pay1193.Entity\obj\Debug\net6.0\Pay1193.Entity.dll
+C:\Users\hiena\Desktop\NTier\Pay1193.Entity\obj\Debug\net6.0\refint\Pay1193.Entity.dll
+C:\Users\hiena\Desktop\NTier\Pay1193.Entity\obj\Debug\net6.0\Pay1193.Entity.pdb
+C:\Users\hiena\Desktop\NTier\Pay1193.Entity\obj\Debug\net6.0\ref\Pay1193.Entity.dll

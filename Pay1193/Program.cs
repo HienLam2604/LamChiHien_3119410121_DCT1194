@@ -12,8 +12,12 @@ builder.Services.AddDbContext<ApplicationDbContext>(opts =>
     opts.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
 
+// Khai báo service
 builder.Services.AddScoped<IEmployee, EmployeeService>();
 builder.Services.AddScoped<IPayService, PayService>();
+builder.Services.AddScoped<ITaxService, TaxService>();
+builder.Services.AddScoped<INationalInsuranceService, NationalInsureanceService>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

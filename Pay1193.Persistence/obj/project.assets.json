@@ -2038,11 +2038,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\pay1193\\Pay1193.Persistence\\Pay1193.Persistence.csproj",
+      "projectUniqueName": "C:\\Users\\hiena\\Desktop\\NTier\\Pay1193.Persistence\\Pay1193.Persistence.csproj",
       "projectName": "Pay1193.Persistence",
-      "projectPath": "D:\\pay1193\\Pay1193.Persistence\\Pay1193.Persistence.csproj",
+      "projectPath": "C:\\Users\\hiena\\Desktop\\NTier\\Pay1193.Persistence\\Pay1193.Persistence.csproj",
       "packagesPath": "C:\\Users\\hiena\\.nuget\\packages\\",
-      "outputPath": "D:\\pay1193\\Pay1193.Persistence\\obj\\",
+      "outputPath": "C:\\Users\\hiena\\Desktop\\NTier\\Pay1193.Persistence\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\hiena\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -2059,8 +2059,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\pay1193\\Pay1193.Entity\\Pay1193.Entity.csproj": {
-              "projectPath": "D:\\pay1193\\Pay1193.Entity\\Pay1193.Entity.csproj"
+            "C:\\Users\\hiena\\Desktop\\NTier\\Pay1193.Entity\\Pay1193.Entity.csproj": {
+              "projectPath": "C:\\Users\\hiena\\Desktop\\NTier\\Pay1193.Entity\\Pay1193.Entity.csproj"
             }
           }
         }

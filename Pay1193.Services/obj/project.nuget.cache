@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "c05VVqpmplZAWS1RPf1hB0KFOL7Jw+kc1KlTrL4l54EI1csxRAIpqfFP/+yPWbU4eINisc6hbGvGw5OE0FcG+w==",
+  "dgSpecHash": "GkHgvGpGzIE+/+tzuzWfS/eKZXexqX9C5gF1x0wOoBvLpTom7WP0d7+Ogvh5ohkBxwrxcMSw+MgMrP6IdrlG1A==",
   "success": true,
-  "projectFilePath": "D:\\pay1193\\Pay1193.Services\\Pay1193.Services.csproj",
+  "projectFilePath": "C:\\Users\\hiena\\Desktop\\NTier\\Pay1193.Services\\Pay1193.Services.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\hiena\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\hiena\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",

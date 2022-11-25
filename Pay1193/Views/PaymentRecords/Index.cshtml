@@ -14,10 +14,10 @@
                     <li class="breadcrumb-item active" aria-current="page">PaymentRecord List</li>
                 </ol>
             </nav><br />
-            <div class="row">
+            <div class="">
                 <a class="btn btn-xs btn-outline-success float-md-right"
                     asp-controller="PaymentRecords" asp-action="Create"
-                >Create Employee</a>
+                >Create Payrecord</a>
                 <table class="table table-striped table-dark">
                     <thead>
                         <tr>
@@ -36,35 +36,33 @@
                         {
                             <tr>
                                 <td>
-                                    <a>@item.Employee</a>
+                                    <a>@item.FullName</a>
                                 </td>
     
                                 <td>
-                                    @item.PayDate
+                                    @item.PayDate.ToString("dd/MM/yyyy")
                                 </td>
+                                <td> @item.PayMonth </td>
                                 <td>
                                     @item.TaxYear
                                 </td>
                                 <td>
-                                    @item.TotalEarnings
+                                   @item.TotalEarnings
                                 </td>
-                                <td>@item.TotalDeductions</td>
-                                <td>@item.NetPayment</td>
+                                <td> @item.TotalDeductions</td>
+                                <td> @item.NetPayment</td>
                                 <td>
                                     <a class="text-primary" 
-                                    asp-controller="Employee" 
-                                    asp-action="Detail"
-                                    asp-route-id="#"><i class="fas fa-bars"></i>Detail</a>
+                                    asp-controller="PaymentRecords"
+                                   asp-action="Detail"
+                                    asp-route-id="@item.Id"><i class="fas fa-bars"></i>Preview Payslip</a>
 
                                    <a class="text-success"
                                    asp-controller="Employee"
                                    asp-action="Edit"
-                                   asp-route-id="#"><i class="fas fa-edit"></i>Edit</a>
+                                   asp-route-id="#"><i class="fas fa-edit"></i>Payslip PDF</a>
 
-                                   <a class="text-danger"
-                                   asp-controller="Employee"
-                                   asp-action="Delete"
-                                   asp-route-id="#"><i class="fas fa-trash-alt"></i>Delete</a>
+
                                 </td>
                                
                             </tr>

@@ -2,7 +2,7 @@
 
 namespace Pay1193.Entity
 {
-    public class TaxYear
+    public class TaxYears
     {
         [Key]
         public int Id { get; set; }

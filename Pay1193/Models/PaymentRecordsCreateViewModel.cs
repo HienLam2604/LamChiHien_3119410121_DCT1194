@@ -8,6 +8,7 @@ namespace Pay1193.Models
     {
         public int Id { get; set; }
         [Required, MaxLength(200)]
+
         public string FullName { get; set; } 
         public string NiNo { get; set; }
 
@@ -17,10 +18,14 @@ namespace Pay1193.Models
 
         [DataType(DataType.Date), Display(Name = "Pay date")]
         public DateTime PayDate { get; set; } = DateTime.UtcNow;
-        [Required(ErrorMessage = "Employee Number is required")]
+
+        [Required(ErrorMessage = "Hourly Rate is required")]
         public decimal HourlyRate { get; set; }
 
+        [Required(ErrorMessage = "Hours worked is required")]
         public decimal HoursWorked { get; set; }
+
+        [Required(ErrorMessage = "Contractual Hours is required")]
         public decimal ContractualHours { get; set; }
 
         public decimal OverTimeHours { get; set; }
@@ -32,10 +37,6 @@ namespace Pay1193.Models
         public decimal TotalEarnings { get; set; }
         public decimal TotalDedution { get; set; }
         public decimal NetPayment { get; set; }
-
-
-
-
-
+        public int EmployeeId { get; internal set; }
     }
 }

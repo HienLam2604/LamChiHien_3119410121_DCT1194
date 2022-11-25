@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\pay1193\\Pay1193.Entity\\Pay1193.Entity.csproj": {}
+    "C:\\Users\\hiena\\Desktop\\NTier\\Pay1193.Entity\\Pay1193.Entity.csproj": {}
   },
   "projects": {
-    "D:\\pay1193\\Pay1193.Entity\\Pay1193.Entity.csproj": {
+    "C:\\Users\\hiena\\Desktop\\NTier\\Pay1193.Entity\\Pay1193.Entity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\pay1193\\Pay1193.Entity\\Pay1193.Entity.csproj",
+        "projectUniqueName": "C:\\Users\\hiena\\Desktop\\NTier\\Pay1193.Entity\\Pay1193.Entity.csproj",
         "projectName": "Pay1193.Entity",
-        "projectPath": "D:\\pay1193\\Pay1193.Entity\\Pay1193.Entity.csproj",
+        "projectPath": "C:\\Users\\hiena\\Desktop\\NTier\\Pay1193.Entity\\Pay1193.Entity.csproj",
         "packagesPath": "C:\\Users\\hiena\\.nuget\\packages\\",
-        "outputPath": "D:\\pay1193\\Pay1193.Entity\\obj\\",
+        "outputPath": "C:\\Users\\hiena\\Desktop\\NTier\\Pay1193.Entity\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\hiena\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -15,6 +15,8 @@ namespace Pay1193.Services
         Employee GetById(int id);
         Task Delete(int employeeId);
         IEnumerable<Employee> GetAll();
+        List<Employee> GetAllForFullName();
+
         decimal UnionFee(int id);
         decimal StudentLoanRepaymentAmount(int id, decimal totalAmount);
     }
